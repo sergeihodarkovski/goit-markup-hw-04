@@ -391,24 +391,25 @@ ul {
 
 .portfolio-list-item {
   display: flex;
-  padding: 32px 16px;
+  padding: 0 16px 0 16px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   align-self: stretch;
-  border: 1px solid var(--CORNFLOWER, #e7e9fc);
   background: var(--WHITE, #fff);
-  border-top: none;
+  gap: 8px;
 }
 
 .portfolio-item {
   display: flex;
   width: 360px;
   height: 420px;
-  padding-bottom: 32px;
   flex-direction: column;
   align-items: flex-start;
+  gap: 32px;
   flex-shrink: 0;
+  border: 1px solid var(--CORNFLOWER, #e7e9fc);
+  border-top: none;
 }
 
 .portfolio-titel {
@@ -428,7 +429,6 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -467,4 +467,19 @@ ul {
 
 .footer-logo-span {
   color: #f4f4fd;
+}
+
+.footer-titel {
+  color: var(--WHITE, #fff);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1, 5;
+  letter-spacing: 0.02em;
+}
+
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }

@@ -92,7 +92,7 @@ ul {
   letter-spacing: 0.02em;
   padding: 24px 0;
   transition-property: color;
-  transition-duration: 0.4s;
+  transition-duration: 250ms;
 }
 
 .header-menu-link:hover {
@@ -121,7 +121,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   transition-property: color;
-  transition-duration: 0.4s;
+  transition-duration: 250ms;
 }
 
 .header-list-link:hover {
@@ -145,6 +145,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1440рх;
 }
 
 .hero-container {
@@ -180,7 +181,7 @@ ul {
   margin: 0 auto;
   min-width: 169px;
   transition-property: background, background-color;
-  transition-duration: 0.4s;
+  transition-duration: 250ms;
 }
 
 .hero-button:hover {
@@ -370,6 +371,9 @@ ul {
 
 .portfolio-item:hover .portfolio-list-text-container {
   transform: translateY(0%);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list-text-container {
@@ -379,7 +383,8 @@ ul {
   height: 100%;
   padding: 40px 32px 164px 32px;
   transform: translateY(100%);
-  transition: translateY 500ms linear;
+  transition: translateY linear 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow;
 }
 
 .portfolio-list-text {

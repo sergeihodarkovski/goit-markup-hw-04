@@ -282,6 +282,7 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  padding: 32px 0;
 }
 
 .team-card-list {
@@ -291,11 +292,9 @@ ul {
 
 .team-card-item {
   display: inline-flex;
-  padding-bottom: 32px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 32px;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   background: var(--WHITE, #fff);
@@ -322,7 +321,7 @@ ul {
 }
 
 .team-card-soc {
-  fill: none;
+  fill: #f4f4fd;
 }
 
 .link-soc {
@@ -336,6 +335,10 @@ ul {
 }
 
 .link-soc:hover {
+  background-color: #404bbf;
+}
+
+.link-soc:focus {
   background-color: #404bbf;
 }
 
@@ -373,8 +376,6 @@ ul {
 
 .portfolio-item:hover .portfolio-list-text {
   transform: translateY(0%);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list-text {
@@ -415,6 +416,11 @@ ul {
   border-top: none;
   box-shadow: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-titel {

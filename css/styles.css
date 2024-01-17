@@ -88,11 +88,9 @@ ul {
 }
 
 .header-item {
-  position: relative;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-item::after {
+.header-menu-link::after {
   content: "";
   width: 100%;
   height: 4px;
@@ -114,6 +112,8 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-menu-link:hover {

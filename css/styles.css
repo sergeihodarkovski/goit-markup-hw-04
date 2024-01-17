@@ -449,12 +449,20 @@ ul {
   padding: 100px 0;
 }
 
+.footer-container {
+  display: flex;
+}
+
 .footer-text {
   max-width: 264px;
   color: var(--CLOUD, #f4f4fd);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.footer-logo-container {
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -479,6 +487,13 @@ ul {
   font-weight: 500;
   line-height: 1, 5;
   letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.footer-soc-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-soc-list {

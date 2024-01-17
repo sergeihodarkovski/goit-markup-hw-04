@@ -371,14 +371,18 @@ ul {
   overflow: hidden;
 }
 
-.portfolio-item:hover .portfolio-list-text-container {
+.portfolio-item:hover .portfolio-list-text {
   transform: translateY(0%);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-list-text-container {
+.portfolio-list-text {
+  color: var(--CLOUD, #f4f4fd);
+  font-size: 16px;
+  line-height: 1, 5;
+  letter-spacing: 0.02em;
   position: absolute;
   top: 0;
   background: var(--IRIS, #4d5ae5);
@@ -387,13 +391,6 @@ ul {
   transform: translateY(100%);
   transition: translateY 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-list-text {
-  color: var(--CLOUD, #f4f4fd);
-  font-size: 16px;
-  line-height: 1, 5;
-  letter-spacing: 0.02em;
 }
 
 .portfolio-list-item {
